@@ -1,0 +1,99 @@
+# macOS Finder metadata
+.DS_Store
+
+# IDE and editor files
+.idea/
+*.iml
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Build artifacts
+build/
+dist/
+target/
+*.war
+*.jar
+
+# Temporary files
+*.tmp
+*.log
+
+# Personal configurations
+.env
+config.ini
+
+# Sensitive data
+credentials.json
+
+# Generated files
+*.pyc
+*.class
+
+# Database files
+*.sqlite
+*.db
+
+# Backend-specific
+
+# Node.js
+npm-debug.log
+.yarn/
+yarn-error.log
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Frontend-specific
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+
+# JavaScript
+bundle.js
+dist/
+*.min.js
+
+# CSS
+*.css.map
+
+# Package-lock files
+package-lock.json
+yarn.lock
+
+# Compiled files
+*.js.map
+
+# Visual Studio
+
+# Visual Studio temporary files
+.vs/
+*.vspscc
+*.suo
+*.user
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.user
+*.userosscache
+*.suo
+*.cache
+*.dll
+
+# WebStorm
+
+.idea/
+*.iml

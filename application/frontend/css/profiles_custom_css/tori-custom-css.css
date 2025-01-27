@@ -1,0 +1,116 @@
+.Tori-profile-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c5e3ec
+}
+
+.Tori-profile-body .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.Tori-profile-body .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.Tori-profile-body .about,
+.Tori-profile-body .interests,
+.Tori-profile-body .skills,
+.Tori-profile-body .contact,
+.Tori-profile-body .goals {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.Tori-profile-body .container h1,
+.Tori-profile-body .container h2 {
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+
+.neeko-image img {
+    display: block;
+    max-width: 100%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.Tori-profile-body .interests ul li,
+.Tori-profile-body .skills ul li,
+.Tori-profile-body .goals ul li {
+    margin-bottom: 10px;
+    text-align: left;
+    list-style-type: square;
+}
+
+.Tori-profile-body .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.return-index {
+    padding-bottom: 50px;
+    /*margin-top: 50px;*/
+}
+
+.toggle-button {
+    display: inline-block;
+    width: calc(18% - 5px); /* Adjusted width to fit buttons on one line */
+    background-color: #564caf;
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.container {
+    text-align: center;
+}
+
+.toggle-button.active {
+    background-color: #372973;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 80px;
+    background-color: white;
+}
+
+/* Media query for mobile/smaller devices */
+@media screen and (max-width: 768px) {
+    .toggle-button {
+        width: 50%;
+        margin: 5px 0;
+    }
+}
+
+/* Start https://www.cursors-4u.com */
+* {
+    cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto !important;
+}
+
+/* End https://www.cursors-4u.com */
+

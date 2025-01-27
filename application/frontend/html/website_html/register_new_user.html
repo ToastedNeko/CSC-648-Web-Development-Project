@@ -1,0 +1,82 @@
+<!-- by Tori -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../../css/website_css/header_css.css">
+    <link rel="stylesheet" href="../../css/website_css/register_new_user.css">
+    <!-- Free Icon from: https://www.flaticon.com/free-icon/olympics_523676-->
+    <link id="favicon" rel="icon" type="image/png" href="../../assets/our_profile_images/olympics_favicon.png">
+    <link rel="prefetch" href="../../assets/our_profile_images/olympics_favicon.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-782N52BJM8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-782N52BJM8');
+    </script>
+</head>
+
+<body>
+<h4 class="demo-text">SFSU
+    Software Engineering Project CSC 648-848, Spring 2024. For Demonstration Only</h4>
+<div class="container">
+    <div class="title-container">
+        <a href="../website_html/webpage.html" class="website-title">
+            <header>
+                <h2 class="header-title2">Olympic Quest College Search</h2>
+                <img src="../../assets/our_profile_images/olympics.png" alt="Website Logo">
+            </header>
+        </a>
+        <div class="user-profile">
+            <img src="" alt="Avatar" class="avatar" id="avatar">
+            <!-- Dynamically get the user's avatar from the database -->
+            <div class="user-name" id="user-name"></div>
+            <button id="login-button">Login</button>
+        </div>
+    </div>
+
+    <nav class="navigation">
+        <button id="search-colleges-button" type="button">Search Colleges</button>
+        <button id="plan-athletics-button" type="button">Athletic Plan</button>
+        <button id="about-us-button" type="button">About Us</button>
+    </nav>
+</div>
+
+<div class="form-container">
+    <h2 class="registration-title">User Registration</h2>
+    <form id="registrationForm">
+        <label for="userType">User Type:</label>
+        <select name="user_type" id="userType" required>
+            <option value="student">Student</option>
+            <option value="staff">Staff</option>
+        </select><br><br>
+        <input type="hidden" name="userType" id="hiddenUserType">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="first_name" id="firstName" required><br><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="last_name" id="lastName" required><br><br>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br><br>
+        <div id="sportFieldContainer">
+            <!-- sport input dynamically gotten -->
+        </div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required><br><br>
+        <div class="button-container">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</div>
+<div class="background-image"></div>
+
+<script src="../../scripts/website_scripts/register_new_user_script.js"></script>
+<script src="../../scripts/website_scripts/header_script.js"></script>
+</body>
+</html>

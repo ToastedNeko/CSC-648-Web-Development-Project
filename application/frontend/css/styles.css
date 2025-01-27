@@ -1,0 +1,474 @@
+/* Global reset and basic styles */
+:root {
+    --primary-color: #007bff;
+    --primary-dark-color: rgba(0, 86, 179, 0);
+}
+
+body, h1, h2, li, a {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.index-body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.index-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.index-container {
+    padding: 20px;
+}
+
+.index-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.index-button-top {
+    margin-bottom: 40px;
+}
+
+.index-button {
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.index-button:hover {
+    background-color: #0056b3;
+}
+
+/*Omar Profile*/
+
+.Omar-header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 0;
+}
+
+.Omar-container {
+    padding: 20px;
+}
+
+.Omar-about, .Omar-interests, .Omar-skills, .Omar-contact {
+    margin-bottom: 20px;
+}
+
+.Omar-profile-body h2 {
+    background: #d85f5f;
+    color: #e3d1d1;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+}
+
+.omar-image img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.Omar-interests ul, .Omar-skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Omar-interests li, .Omar-skills li {
+    background: #eaeaea;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Omar-contact p, .Omar-return-index p {
+    margin-bottom: 10px;
+}
+
+.Omar-return-index p a {
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.Omar-footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: rgb(236, 227, 227);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.Omar-profile-body a {
+    color: #333;
+}
+
+.Omar-profile-body a:hover {
+    color: #007bff;
+}
+
+/*End Omar profiles_custom_html*/
+
+/*Subodh Profile CSS*/
+
+/* styles.css */
+.subodh-profile-body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0fff0;
+    color: #333;
+}
+
+.subodh-profile-body .bhunti-image {
+    height: 500px;
+    width: auto;
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
+}
+
+.subodh-profile-body .introduction-paragraph {
+    font-family: 'Georgia', serif;
+    font-size: 22px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+.subodh-profile-body .skills {
+    background-color: #c5e3ec;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.subodh-profile-body .contacts h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.subodh-profile-body .contacts p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.subodh-profile-body a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.subodh-profile-body a:hover {
+    color: #0056b3;
+}
+
+
+/*End subodh profile*/
+
+/*Jake Profile CSS*/
+
+.jake-about-body {
+    background-color: blanchedalmond;
+    height: 100%;
+}
+
+.jake-about-header {
+    text-align: center;
+    background-color: goldenrod;
+    border-bottom-style: solid;
+}
+
+.jake-about-container {
+    margin-top: 1rem;
+    max-width: 60%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+}
+
+.jake-about-info-container {
+    background-color:burlywood;
+    border-radius: 1rem;
+    padding: 10px;
+} 
+
+.jake-about-container footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.jake-about-container a {
+    color:rgb(19, 98, 141);
+    text-decoration: none;
+}
+
+.jake-about-container h2 {
+    text-decoration: underline;
+}
+
+.jake-about-image {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 300px;
+    padding-top: 1rem;
+}
+
+.jake-about-text {
+    text-align: center;
+}
+
+/*End Jake Profile CSS*/
+
+/*Start of Sam's Profile CSS*/
+.Sam-profile-body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.Sam-profile-body .header {
+    background-color: #808080;
+    padding: 80px;
+    text-align: center;
+    font-size: 50px;
+    color: #ffa500;
+    text-shadow: 8px 2px 5px #000000;
+}
+
+.Sam-profile-body .div1 {
+    max-width: 2000px;
+    max-height: 2000px;
+    padding: 20px;
+    background-color: #ffa500;
+}
+
+.Sam-profile-body .intro,
+.Sam-profile-body .interest1,
+.Sam-profile-body .skill1,
+.Sam-profile-body .contact {
+    margin-bottom: 15px;
+    color: #ffa500;
+    text-shadow: 5px 5px 5px #000000;
+    border: 20px solid #808080;
+    background-color: #808080;
+    margin-right: 1000px;
+}
+
+.Sam-profile-body .intro-text {
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px #000000;
+    border: 20px solid #ffa500;
+    background-color: #ffa500;
+    margin-right: 628px;
+}
+
+.Sam-image img {
+    float: right;
+    width: 550px;
+    height: 1000px;
+    display: block;
+}
+
+.Sam-profile-body .bullet-point {
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px #000000;
+    border: 20px solid #ffa500;
+    background-color: #ffa500;
+    margin-right: 628px;
+}
+
+.Sam-profile-body .interest2,
+.Sam-profile-body .skill2,
+.Sam-profile-body .email {
+    margin-bottom: -10px;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px #000000;
+    border: 20px solid #ffa500;
+    background-color: #ffa500;
+    margin-right: 60px;
+}
+
+.Sam-profile-body .link {
+    font-family: 'Fantasy';
+    color: #0000ff;
+    text-shadow: 5px 5px 5px #ffffff;
+}
+
+/*End of Sam's Profile CSS*/
+
+/*Beginning  of Shriya's Profile CSS */
+.Shriya-header {
+    background: #903377;
+    color: #a76ab7;
+    text-align: center;
+    padding: 1.2rem 0;
+}
+
+.Shriya-container {
+    padding: 20px;
+}
+
+.Shriya-about, .Shriya-interests, .Shriya-skills, .Shriya-contact {
+    margin-bottom: 20px;
+}
+
+.Shriya-profile-body h2 {
+    background: #d85f5f;
+    color: #e3d1d1;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+}
+
+.Shriya-image img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.Shriya-interests ul, .Shriya-skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Shriya-interests li, .Shriya-skills li {
+    background: #eaeaea;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Shriya-contact p, .Shriya-return-index p {
+    margin-bottom: 10px;
+}
+
+.Shriya-return-index p a {
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.Shriya-footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: rgb(236, 227, 227);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.Shriya-profile-body a {
+    color: #333;
+}
+
+.Shriya-profile-body a:hover {
+    color: #007bff;
+}
+
+/*End of Shriya's Profile CSS */
+
+/* Erika's Profile */
+
+.Erika-profile {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(91, 161, 163);
+    text-align: center;
+}
+
+
+.Erika-profile .header {
+    text-align: center;
+    background-color: darkslategrey;
+    border-bottom-style: dashed;
+    padding: 20px;
+}
+
+
+.Erika-profile .container {
+    background-color: rgb(140, 131, 198);
+
+}
+
+.Erika-profile .about,
+.Erika-profile .interests,
+.Erika-profile .skills,
+.Erika-profile .contact {
+    margin-bottom: 30px;
+    color: rgb(140, 131, 198);
+}
+
+.Erika-profile .about h2 {
+    text-align: center;
+}
+
+.snowduck-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-style: dashed;
+}
+
+.Erika-profile .interests ul,
+.Erika-profile .skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Erika-profile .interests li,
+.Erika-profile .skills li {
+    background: #0056b3;
+
+}
+
+.Erika-profile .contact p {
+    text-align: center;
+}
+
+.Erika-profile .contact h2 {
+    text-align: center;
+    /*font:bold;*/
+}
+
+/* End of Erika's Profile*/

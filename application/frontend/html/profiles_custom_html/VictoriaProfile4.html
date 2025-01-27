@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!--    <link rel="stylesheet" href="../css/styles.css">-->
+    <link rel="stylesheet" href="../../css/profiles_custom_css/tori-custom-css.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-782N52BJM8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-782N52BJM8');
+    </script>    
+</head>
+
+<body class="Tori-profile-body">
+<header class="header">
+    <h1>About Profile</h1>
+</header>
+
+<div class="container">
+    <button class="toggle-button active" data-target="about">About Me</button>
+    <button class="toggle-button" data-target="interests">Hobbies</button>
+    <button class="toggle-button" data-target="skills">Expertise</button>
+    <button class="toggle-button" data-target="goals">Career Goals</button>
+    <button class="toggle-button" data-target="contact">Get in Touch</button>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hello, I'm Tori. Here's a picture of my cat, Neeko:</p>
+        <div class="neeko-image">
+            <img src="../../assets/our_profile_images/Neeko.png" alt="My Image">
+        </div>
+    </section>
+
+    <section class="interests hidden">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Video Games (Retro and Modern)</li>
+            <li>Anime</li>
+            <li>Pokémon</li>
+            <li>Music</li>
+            <li>Travel</li>
+        </ul>
+    </section>
+
+    <section class="skills hidden">
+        <h2>Expertise</h2>
+        <ul>
+            <li>Java</li>
+            <li>Swift</li>
+            <li>SwiftUI</li>
+            <li>SQL</li>
+            <li>System Administration</li>
+            <li>Database Administration</li>
+            <li>C#</li>
+            <li>Unity</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <section class="goals hidden">
+        <h2>Career Goals</h2>
+        <ul>
+            <li>iOS Development</li>
+            <li>Android Development</li>
+            <li>Game Development</li>
+            <li>Web Development</li>
+        </ul>
+    </section>
+
+    <section class="contact hidden">
+        <h2>Get in Touch</h2>
+        <p>You can reach out to me via email at <a href="mailto:ToastedNekoGit@gmail.com">ToastedNekoGit@gmail.com</a>.
+        </p>
+    </section>
+
+    <div class="return-index">
+        <p><a href="../../index.html"> &#x25C0; Return to Previous Page </a></p>
+    </div>
+</div>
+
+<footer class="footer">
+    <p></p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".toggle-button");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", function () {
+                const target = this.getAttribute("data-target");
+                const section = document.querySelector("." + target);
+
+                // Remove active class from all buttons
+                buttons.forEach(btn => {
+                    btn.classList.remove("active");
+                });
+
+                // Add active class to clicked button
+                this.classList.add("active");
+
+                // Show clicked section and hide others
+                document.querySelectorAll("section").forEach(s => {
+                    if (s.classList.contains(target)) {
+                        s.classList.remove("hidden");
+                    } else {
+                        s.classList.add("hidden");
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+/* Global reset and basic styles */
+:root {
+    --primary-color: #007bff;
+    --primary-dark-color: rgba(6, 83, 173, 0);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.title {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.user-profile {
+    display: none;
+}
+
+.navigation {
+    background-color: #ccc;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.demo-text {
+    font-size: 12px;
+    text-align: center;
+    color: #808080;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.plan-container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid rgba(0, 146, 194, 0.44);
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+.dashboard-heading {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        text-align: center;
+        width: 100%;
+    }
+
+    .title,
+    .navigation {
+        text-align: center;
+    }
+
+    .header-title {
+        width: 100%;
+    }
+
+    .user-profile {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .avatar-frame {
+        margin-bottom: 10px;
+    }
+
+    .login-button {
+        margin-top: 10px;
+    }
+
+    .title {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .search-input {
+        width: 50%;
+    }
+
+    .search-button {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .login-button {
+        font-size: 14px;
+    }
+
+    .navigation {
+        background-color: #ccc;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .heading {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .return-index {
+        text-align: center;
+    }
+}

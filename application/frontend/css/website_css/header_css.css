@@ -1,0 +1,281 @@
+/* global reset and basic styles */
+:root {
+    --primary-color: #007aff;
+    --primary-dark-color: #004c9f;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.title {
+    background-color: #fff;
+    padding: 15px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-title2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    font-size: 22px;
+
+}
+
+.navigation {
+    border-top: 1px solid #33333359;
+    border-bottom: 1px solid #33333359;
+    background-color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#search-colleges-button, #plan-athletics-button, #about-us-button {
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    border-bottom: 3px solid rgba(0, 0, 255, 0);
+}
+
+#search-colleges-button:hover,
+#plan-athletics-button:hover,
+#about-us-button:hover {
+    border-bottom: 3px solid #0092C2;
+
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: -30px;
+    right: 0px;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 4px #F4C300;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 0 4px #F4C300;
+}
+
+.user-name {
+    display: none;
+    text-align: center;
+    padding: 2px 10px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #333;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+#login-button {
+    text-decoration: none;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    color: black;
+}
+
+#login-button:hover {
+    text-decoration: underline;
+    color: #0092C2;
+}
+
+.heading {
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-text {
+    font-size: 12px;
+    text-align: center;
+    color: #808080;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-title2 {
+    margin-right: 10px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.website-title img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    display: inline;
+    vertical-align: middle;
+}
+
+.website-title {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.background-image {
+    position: fixed;
+    opacity: 75%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url('../../assets/other/klipartz.com.png');
+    background-size: cover;
+    background-position: bottom right;
+    width: 442px;
+    height: 337px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .background-image {
+        display: none;
+
+    }
+
+    .container {
+        text-align: center;
+        width: 100%;
+    }
+
+    .title,
+    .navigation {
+        text-align: center;
+    }
+
+    .header-title {
+        width: 100%;
+    }
+
+    .user-profile {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .avatar-frame {
+        margin-bottom: 10px;
+    }
+
+
+    #login-button {
+        margin-top: 10px;
+    }
+
+    .title {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #search-colleges-button,
+    #plan-athletics-button,
+    #about-us-button {
+        text-decoration: none;
+        padding: 8px 15px;
+        margin: 0 10px;
+        transition: background-color 0.3s, color 0.3s;
+        font-size: 18px;
+    }
+
+    .login-button {
+        font-size: 14px;
+    }
+
+    .navigation {
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .heading {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .return-index {
+        text-align: center;
+    }
+
+    .demo-text {
+        font-size: 12px;
+        text-align: center;
+        color: #808080;
+    }
+
+    .user-name {
+        display: none;
+        text-align: center;
+        padding: 2px 10px;
+        font-weight: bold;
+        font-size: 12px;
+        color: #333;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+
+    .avatar:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .avatar {
+        width: 64px;
+        height: 64px;
+
+    }
+
+    .user-profile .avatar {
+        transition: none;
+
+    }
+}

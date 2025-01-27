@@ -1,0 +1,131 @@
+<!-- by Tori -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../css/website_css/staff_account_css.css">
+    <link rel="stylesheet" href="../../css/website_css/header_css.css">
+    <!-- Free Icon from: https://www.flaticon.com/free-icon/olympics_523676-->
+    <link id="favicon" rel="icon" type="image/png" href="../../assets/our_profile_images/olympics_favicon.png">
+    <link rel="prefetch" href="../../assets/our_profile_images/olympics_favicon.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-782N52BJM8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-782N52BJM8');
+    </script>
+</head>
+
+<body>
+<h4 class="demo-text">SFSU
+    Software Engineering Project CSC 648-848, Spring 2024. For Demonstration Only</h4>
+<div class="container">
+    <div class="title-container">
+        <a href="../website_html/webpage.html" class="website-title">
+            <header>
+                <h2 class="header-title2">Olympic Quest College Search</h2>
+                <img src="../../assets/our_profile_images/olympics.png" alt="Website Logo">
+            </header>
+        </a>
+        <div class="user-profile">
+            <img src="" alt="Avatar" class="avatar" id="avatar">
+            <!-- Dynamically get the user's avatar from the database -->
+            <div class="user-name" id="user-name"></div>
+            <button id="login-button">Login</button>
+        </div>
+    </div>
+
+    <nav class="navigation">
+        <button id="search-colleges-button" type="button">Search Colleges</button>
+        <button id="plan-athletics-button" type="button">Athletic Plan</button>
+        <button id="about-us-button" type="button">About Us</button>
+    </nav>
+</div>
+
+<h1 class="dashboard-heading">Staff Dashboard</h1>
+
+<section id="userInfoSection">
+    <h2>Your Information</h2>
+    <div id="userInfo">
+        <!-- User information dynamically inserted here -->
+    </div>
+</section>
+
+<div class="studentDetailsContainer">
+    <div class="studentDetailsInnerContainer">
+        <section id="studentListInfo">
+            <h2>Update Student</h2>
+            <div class="input-row">
+                <label for="studentList">Select Student:</label>
+                <select id="studentList">
+                    <!-- Dynamically populated student list -->
+                </select>
+            </div>
+<!--            <div class="input-row">-->
+<!--                <label for="olympicSport">Olympic Sport:</label>-->
+<!--                <input type="text" id="olympicSport" placeholder="Enter Olympic Sport">-->
+<!--            </div>-->
+            <div class="input-row">
+                <label for="olympicSport">Olympic Sport:</label>
+                <select id="olympicSport">
+                    <!-- Dynamically populated list of olympic sports -->
+                </select>
+            </div>
+
+            <div class="input-row">
+                <label for="olympicMedal">Olympic Medal:</label>
+                <select id="olympicMedal">
+                    <option value="" selected>Select an Olympic medal...</option> <!-- Empty option -->
+                    <option value="gold">Gold</option>
+                    <option value="silver">Silver</option>
+                    <option value="bronze">Bronze</option>
+                </select>
+            </div>
+            <button id="updateDetailsButton">Update Details</button>
+        </section>
+
+        <section id="studentDetails" class="studentDetails" style="display: none;">
+            <!-- Student information will be displayed dynamically -->
+        </section>
+    </div>
+</div>
+
+<section id="messageSection">
+    <h2>Your Messages</h2>
+    <div id="messageList">
+        <!-- Messages dynamically inserted here -->
+    </div>
+</section>
+
+<form id="messageForm">
+    <div class="form-group">
+        <h2>User List</h2>
+        <label for="recipientUsername">Recipient Username:</label>
+        <select id="recipientUsername">
+            <!-- Dropdown options will be populated dynamically -->
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="messageContent">Message:</label>
+        <textarea id="messageContent" placeholder="Type your message..."></textarea>
+    </div>
+    <button id="sendMessageButton">Send</button>
+</form>
+
+<div class="background-image"></div>
+
+<script src="../../scripts/website_scripts/staff_account_script.js"></script>
+<script src="../../scripts/website_scripts/header_script.js"></script>
+<script src="../../scripts/website_scripts/login_script.js"></script>
+
+</body>
+</html>
+
+
+
