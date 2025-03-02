@@ -9,7 +9,7 @@ require('dotenv').config();
 
 // Connect to the database(s) for mysql
 const pool = mysql.createPool({
-    host: process.env.DATABASE_HOST || '127.0.0.1',
+    host: process.env.DATABASE_HOST || '3.18.5.9',
     port: 3306, // mysql port number
     user: process.env.DATABASE_USER || 'ToastedPickles',
     password: process.env.DATABASE_PASSWORD || 'SFSUstudent6789!',
