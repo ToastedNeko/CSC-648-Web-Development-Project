@@ -1,6 +1,6 @@
 # CSC648 Repository
 
-## Application URL: TODO
+## Application URL: http://3.18.5.9/
 
 | Student Name | Student Email   | GitHub Username |
 |    :---:     |     :---:       |     :---:       |
