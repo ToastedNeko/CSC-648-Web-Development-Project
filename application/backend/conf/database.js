@@ -9,10 +9,10 @@ require('dotenv').config();
 
 // Connect to the database(s) for mysql
 const pool = mysql.createPool({
-    host: process.env.DATABASE_HOST || '00.000.00.000', // TODO
+    host: process.env.DATABASE_HOST || '3.18.5.9',
     port: 3306, // mysql port number
-    user: process.env.DATABASE_USER || 'password',
-    password: process.env.DATABASE_PASSWORD || 'password',
+    user: process.env.DATABASE_USER || 'ToastedPickles',
+    password: process.env.DATABASE_PASSWORD || 'SFSUstudent6789!',
     database: process.env.DATABASE || 'Team2_Database',
     queueLimit: 0,
     connectionLimit: 20,
