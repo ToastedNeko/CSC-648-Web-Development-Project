@@ -132,7 +132,7 @@ function displaySearchResults(results) {
 
             // Encode space to pass to results page
             // Encoding replaces characters with ascii for url
-            collegeLink.href = encodeURI(`college_results.html?name=${college.college_name}`);
+            collegeLink.href = `college_results.html?name=${encodeURIComponent(college.college_name)}`;
             collegeLink.appendChild(collegeImage); // Append college image to college link
             collegeItem.appendChild(collegeLink); // Append college link (with image) to college item
             listItem.appendChild(collegeItem); // Append college item to list item
