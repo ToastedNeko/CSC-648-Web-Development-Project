@@ -1,6 +1,6 @@
 # CSC648 Repository
 
-## Application URL: http://3.132.117.154/
+## Application URL: http://3.144.86.46/
 
 | Student Name | Student Email   | GitHub Username |
 |    :---:     |     :---:       |     :---:       |
